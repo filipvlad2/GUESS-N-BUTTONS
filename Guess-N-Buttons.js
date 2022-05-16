@@ -1,4 +1,4 @@
-var winner;
+let winner;
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -7,8 +7,8 @@ function getRandomInt(min, max) {
 }
 
 function verifyWinningButton(clicked_id) {
-  var winnnerText = winner.toString();
-  var clickedIdText = clicked_id.toString();
+  let winnnerText = winner.toString();
+  let clickedIdText = clicked_id.toString();
   if (clicked_id.localeCompare(winnnerText) == 0) {
     alert("Winner!");
   } else {
