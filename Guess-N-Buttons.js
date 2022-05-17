@@ -7,9 +7,7 @@ function getRandomInt(min, max) {
 }
 
 function verifyWinningButton(clicked_id) {
-  let winnnerText = winner.toString();
-  let clickedIdText = clicked_id.toString();
-  if (clicked_id.localeCompare(winnnerText) == 0) {
+  if (clicked_id == winner) {
     alert("Winner!");
   } else {
     alert("Looser!");
